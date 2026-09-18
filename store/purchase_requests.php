@@ -458,14 +458,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-
-                <div>
-                    <h1>Purchase Requests</h1>
-                    <p>Create purchase requests for required materials and track their status.</p>
-                </div>
+                
 
             </div>
 

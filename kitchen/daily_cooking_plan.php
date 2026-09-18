@@ -818,17 +818,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-calendar-days"></i>
-                </div>
 
-                <div>
-                    <h1>Daily Cooking Plan</h1>
-                    <p>
-                        Select the food and number of plates required
-                        for Breakfast, Lunch, Snacks and Dinner.
-                    </p>
-                </div>
 
             </div>
 

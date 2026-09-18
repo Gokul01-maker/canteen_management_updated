@@ -411,18 +411,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
     <div class="page-header">
 
-        <div>
-
-            <h4 class="page-header-title">
-                <i class="fa-solid fa-hand-holding-heart me-2"></i>
-                Food Receiving
-            </h4>
-
-            <p class="page-header-subtitle">
-                Receive food sent from Kitchen.
-            </p>
-
-        </div>
+        
 
     </div>
 

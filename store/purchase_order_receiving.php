@@ -484,14 +484,6 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-truck-ramp-box"></i>
-                </div>
-
-                <div>
-                    <h1>Purchase Order Receiving</h1>
-                    <p>Receive purchased materials and update stock.</p>
-                </div>
 
             </div>
 

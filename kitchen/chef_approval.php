@@ -1413,18 +1413,6 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                </div>
-
-                <div>
-                    <h1>Chef Approval</h1>
-                    <p>
-                        Review the daily cooking plan, verify automatically
-                        calculated materials, make changes if required and send to Store.
-                    </p>
-                </div>
-
             </div>
 
             <div class="hero-right">

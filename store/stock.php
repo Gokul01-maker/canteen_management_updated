@@ -315,14 +315,6 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-warehouse"></i>
-                </div>
-
-                <div>
-                    <h1>Stock Report</h1>
-                    <p>View current stock and material-wise stock status.</p>
-                </div>
 
             </div>
 

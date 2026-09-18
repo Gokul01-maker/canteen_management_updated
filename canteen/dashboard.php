@@ -203,13 +203,8 @@ require_once '../includes/sidebar.php';
 <div class="page-body">
     <div class="dashboard-hero">
         <div class="dashboard-heading">
-            <div class="heading-icon">
-                <i class="fa-solid fa-utensils"></i>
-            </div>
-            <div>
-                <h1>Canteen Dashboard</h1>
-                <p>Meal planning, food preparation and service overview.</p>
-            </div>
+            
+            
         </div>
         <div class="hero-right">
             <div class="date-chip">

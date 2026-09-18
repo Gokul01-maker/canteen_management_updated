@@ -806,14 +806,7 @@ require_once __DIR__ . '/../includes/topbar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-utensils"></i>
-                </div>
-
-                <div>
-                    <h1>Food Menu &amp; Recipe</h1>
-                    <p>Create food menus and define the material required for one plate.</p>
-                </div>
+                
 
             </div>
 

@@ -549,15 +549,6 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-utensils"></i>
-                </div>
-
-                <div>
-                    <h1>Kitchen Material Requests</h1>
-                    <p>Issue approved kitchen materials to Kitchen.</p>
-                </div>
-
             </div>
 
             <div class="hero-right">

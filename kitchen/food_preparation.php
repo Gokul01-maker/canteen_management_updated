@@ -563,14 +563,6 @@ foreach ($foodItems as $foodItem) {
 
     <div class="dashboard-heading">
 
-        <div class="heading-icon">
-            <i class="fa-solid fa-fire-burner"></i>
-        </div>
-
-        <div>
-            <h1>Food Preparation</h1>
-            <p>Prepare approved food and send it to Canteen.</p>
-        </div>
 
     </div>
 

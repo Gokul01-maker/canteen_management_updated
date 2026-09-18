@@ -383,13 +383,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
     <div class="page-body">
         <div class="dashboard-hero">
             <div class="dashboard-heading">
-                <div class="heading-icon">
-                    <i class="fa-solid fa-kitchen-set"></i>
-                </div>
-                <div>
-                    <h1>Kitchen Dashboard</h1>
-                    <p>Cooking plan, material issue and food preparation overview.</p>
-                </div>
+                
             </div>
             <div class="hero-right">
                 <div class="date-chip">

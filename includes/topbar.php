@@ -43,11 +43,31 @@ $menuItems = [
     ['label'=>'Invoice Approvals', 'icon'=>'fa-file-invoice-dollar', 'href'=>'../admin/invoice_approvals.php', 'subtitle'=>'Review and approve supplier invoices for payment.'],
     ['label'=>'Canteen Report', 'icon'=>'fa-chart-pie', 'href'=>'../admin/canteen_report.php', 'subtitle'=>'View food serving, staff consumption, and actual wastage.'],
     
-    // Purchase Menus 
+    // Purchase Menus
     ['label'=>'Supplier Management', 'icon'=>'fa-truck-fast', 'href'=>'../purchase/suppliers.php', 'subtitle'=>'Manage purchase suppliers.'],
     ['label'=>'Purchase Order', 'icon'=>'fa-cart-shopping', 'href'=>'../purchase/purchase_orders.php', 'subtitle'=>'Create and manage purchase orders.'],
     ['label'=>'Purchase Requests', 'icon'=>'fa-clipboard-list', 'href'=>'../purchase/requests.php', 'subtitle'=>'Review and process purchase requests submitted by Store.'],
-    ['label'=>'Purchase Report', 'icon'=>'fa-file-lines', 'href'=>'../purchase/purchase_report.php', 'subtitle'=>'View purchase and stock reports.']
+    ['label'=>'Purchase Report', 'icon'=>'fa-file-lines', 'href'=>'../purchase/purchase_report.php', 'subtitle'=>'View purchase and stock reports.'],
+
+    // Store Menus
+    ['label'=>'Stock Report', 'icon'=>'fa-chart-column', 'href'=>'../store/stock.php', 'subtitle'=>'View current stock and material-wise stock status.'],
+    ['label'=>'Material Master', 'icon'=>'fa-boxes-stacked', 'href'=>'../store/materials.php', 'subtitle'=>'Manage canteen store materials and minimum stock levels.'],
+    ['label'=>'Material Categories', 'icon'=>'fa-tags', 'href'=>'../store/categories.php', 'subtitle'=>'Manage categories used in Material Master.'],
+    ['label'=>'Kitchen Material Requests', 'icon'=>'fa-utensils', 'href'=>'../store/kitchen_requests.php', 'subtitle'=>'Issue approved kitchen materials to Kitchen.'],
+    ['label'=>'Purchase Requests', 'icon'=>'fa-cart-plus', 'href'=>'../store/purchase_requests.php', 'subtitle'=>'Create purchase requests for required materials and track their status.'],
+    ['label'=>'Purchase Order Receiving', 'icon'=>'fa-truck-ramp-box', 'href'=>'../store/purchase_order_receiving.php', 'subtitle'=>'Receive purchased materials and update stock.'],
+
+    // Canteen Menus
+    ['label'=>'Food Receiving', 'icon'=>'fa-hand-holding-heart', 'href'=>'../canteen/food_receiving.php', 'subtitle'=>'Receive food sent from Kitchen.'],
+    ['label'=>'Food Serving', 'icon'=>'fa-bell-concierge', 'href'=>'../canteen/food_serving.php', 'subtitle'=>'Record remaining food and close service end of the day.'],
+    ['label'=>'Food Wastage', 'icon'=>'fa-trash-can', 'href'=>'../canteen/wastage.php', 'subtitle'=>'Record and monitor daily food wastage.'],
+
+    // Kitchen Menus (New 5 Menus)
+    ['label'=>'Food Menu & Recipe', 'icon'=>'fa-utensils', 'href'=>'../kitchen/food_menu.php', 'subtitle'=>'Create food menus and define the material required for one plate.'],
+    ['label'=>'Daily Cooking Plan', 'icon'=>'fa-calendar-days', 'href'=>'../kitchen/daily_cooking_plan.php', 'subtitle'=>'Select the food and number of plates required for Breakfast, Lunch, Snacks and Dinner.'],
+    ['label'=>'Chef Approval', 'icon'=>'fa-clipboard-check', 'href'=>'../kitchen/chef_approval.php', 'subtitle'=>'Review the daily cooking plan, verify automatically calculated materials, make changes if required and send to Store.'],
+    ['label'=>'Food Preparation', 'icon'=>'fa-fire-burner', 'href'=>'../kitchen/food_preparation.php', 'subtitle'=>'Prepare approved food and send it to Canteen.'],
+    ['label'=>'Material Issue History', 'icon'=>'fa-clock-rotate-left', 'href'=>'../kitchen/issue_history.php', 'subtitle'=>'View materials issued by Store for Kitchen cooking plans.']
 ];
 
 $currentPageFile = basename($_SERVER['PHP_SELF']);

@@ -12,18 +12,7 @@ require_once '../includes/sidebar.php';
 <?php require_once '../includes/topbar.php'; ?>
 <div class="page-body">
 
-    <!-- Page Header -->
-    <div class="page-header">
-        <div>
-            <h4 class="page-header-title">
-                <i class="fa-solid fa-trash-can me-2"></i>
-                Food Wastage
-            </h4>
-            <p class="page-header-subtitle">
-                Record and monitor daily food wastage.
-            </p>
-        </div>
-    </div>
+   
 
     <!-- Message -->
     <?php if (!empty($message)): ?>

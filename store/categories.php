@@ -149,15 +149,6 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
             <div class="dashboard-heading">
 
-                <div class="heading-icon">
-                    <i class="fa-solid fa-tags"></i>
-                </div>
-
-                <div>
-                    <h1>Material Categories</h1>
-                    <p>Manage categories used in Material Master.</p>
-                </div>
-
             </div>
 
             <div class="hero-right">

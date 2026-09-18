@@ -379,16 +379,6 @@ require_once __DIR__ . '/../includes/sidebar.php';
         <div class="dashboard-hero">
 
             <div class="dashboard-heading">
-
-                <div class="heading-icon">
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                </div>
-
-                <div>
-                    <h1>Material Master</h1>
-                    <p>Manage canteen store materials and minimum stock levels.</p>
-                </div>
-
             </div>
 
             <div class="hero-right">

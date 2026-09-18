@@ -346,14 +346,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
     <div class="dashboard-heading">
 
-        <div class="heading-icon">
-            <i class="fa-solid fa-boxes-stacked"></i>
-        </div>
-
-        <div>
-            <h1>Material Issue History</h1>
-            <p>View materials issued by Store for Kitchen cooking plans.</p>
-        </div>
+       
 
     </div>
 

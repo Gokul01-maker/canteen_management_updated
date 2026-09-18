@@ -144,13 +144,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
     <div class="page-body">
         <div class="dashboard-hero">
             <div class="dashboard-heading">
-                <div class="heading-icon">
-                    <i class="fa-solid fa-warehouse"></i>
-                </div>
-                <div>
-                    <h1>Store Dashboard</h1>
-                    <p>Inventory, purchase and stock management overview.</p>
-                </div>
+            
             </div>
             <div class="hero-right">
                 <div class="date-chip">
