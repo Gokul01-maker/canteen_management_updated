@@ -98,13 +98,8 @@ require_once __DIR__ . '/../includes/sidebar.php';
     <div class="page-body">
         <div class="dashboard-hero">
             <div class="dashboard-heading">
-                <div class="heading-icon">
-                    <i class="fa-solid fa-gauge-high"></i>
-                </div>
-                <div>
-                    <h1>Admin Dashboard</h1>
-                    <p>System management, users, and reports overview.</p>
-                </div>
+                
+                
             </div>
             <div class="hero-right">
                 <div class="date-chip">
