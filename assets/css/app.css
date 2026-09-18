@@ -2828,3 +2828,72 @@ body.role-super-admin .review-user-avatar {
 body.role-super-admin .dashboard-table .table-header a { 
   color: var(--admin-red); 
 }
+
+/* ============================================================
+   CANTEEN MODULE - GREEN BUTTON THEME
+   Scoped to body.role-canteen so it only affects Canteen pages
+   (e.g. Food Receiving "Receive" button), matching the green
+   sidebar gradient and the "Healthy Food" badge color.
+   ============================================================ */
+:root {
+  --canteen-green: #0b9b65;
+  --canteen-green-dark: #078055;
+  --canteen-green-soft: #e9f9f2;
+}
+
+/* Solid buttons - e.g. the "Receive" button on Food Receiving */
+body.role-canteen .btn-primary {
+  --bs-btn-bg: var(--canteen-green);
+  --bs-btn-border-color: var(--canteen-green);
+  --bs-btn-hover-bg: var(--canteen-green-dark);
+  --bs-btn-hover-border-color: var(--canteen-green-dark);
+  --bs-btn-active-bg: var(--canteen-green-dark);
+  --bs-btn-active-border-color: var(--canteen-green-dark);
+  --bs-btn-disabled-bg: var(--canteen-green);
+  --bs-btn-disabled-border-color: var(--canteen-green);
+  color: #fff;
+}
+
+/* Outline buttons on Canteen pages */
+body.role-canteen .btn-outline-primary {
+  --bs-btn-color: var(--canteen-green);
+  --bs-btn-border-color: #a9e6cc;
+  --bs-btn-hover-bg: var(--canteen-green);
+  --bs-btn-hover-border-color: var(--canteen-green);
+  --bs-btn-active-bg: var(--canteen-green-dark);
+  --bs-btn-active-border-color: var(--canteen-green-dark);
+}
+
+/* Input focus rings inside Canteen modals/forms */
+body.role-canteen .form-control:focus,
+body.role-canteen .form-select:focus {
+  border-color: var(--canteen-green) !important;
+  box-shadow: 0 0 0 .2rem rgba(11, 155, 101, .15) !important;
+}
+
+/* Modal header gradients on Canteen pages */
+body.role-canteen .edit-user-modal .modal-header,
+body.role-canteen .app-modal .modal-header {
+  background: linear-gradient(135deg, var(--canteen-green) 0%, var(--canteen-green-dark) 100%) !important;
+}
+
+/* Avatars / icon accents on Canteen pages */
+body.role-canteen .row-avatar,
+body.role-canteen .table-avatar {
+  background: var(--canteen-green-soft) !important;
+  color: var(--canteen-green) !important;
+}
+
+body.role-canteen .dashboard-heading .heading-icon {
+  background: var(--canteen-green-soft);
+  color: var(--canteen-green);
+}
+
+body.role-canteen .dashboard-table .table-header a { color: var(--canteen-green); }
+
+/* Badge accents matching stat-icon-green on Canteen pages, e.g. "Sent" badge */
+body.role-canteen .badge-sent,
+body.role-canteen .badge-enable {
+  background: var(--canteen-green-soft);
+  color: var(--canteen-green-dark);
+}

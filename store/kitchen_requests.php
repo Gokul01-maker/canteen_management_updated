@@ -325,11 +325,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['issue_selected_materi
 
 /*
 |--------------------------------------------------------------------------
-| REQUEST STATUS FILTER
+| REQUEST STATUS & DATE FILTER
 |--------------------------------------------------------------------------
 */
 
 $statusFilter = trim($_GET['status'] ?? '');
+$dateFilter   = trim($_GET['request_date'] ?? '');
 
 
 /*
@@ -362,7 +363,7 @@ $where[] = "
 
 /*
 |--------------------------------------------------------------------------
-| OPTIONAL STATUS FILTER
+| OPTIONAL STATUS & DATE FILTER
 |--------------------------------------------------------------------------
 */
 
@@ -371,6 +372,13 @@ if ($statusFilter !== '') {
     $where[] = "kr.status = :status";
 
     $params[':status'] = $statusFilter;
+}
+
+if ($dateFilter !== '') {
+
+    $where[] = "DATE(kr.request_date) = :request_date";
+
+    $params[':request_date'] = $dateFilter;
 }
 
 
@@ -728,6 +736,18 @@ require_once __DIR__ . '/../includes/sidebar.php';
 
                     </div>
 
+                    <div class="col-md-4">
+                        
+                        <label class="form-label">
+                            Request Date
+                        </label>
+                        
+                        <input type="date" 
+                               name="request_date" 
+                               class="form-control" 
+                               value="<?= htmlspecialchars($dateFilter ?? '') ?>">
+                               
+                    </div>
 
                     <div class="col-md-2">
 

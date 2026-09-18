@@ -59,7 +59,6 @@ $tagline = $isAdmin ? 'Manage Control Grow' : ($isStore ? 'Stock Today\nService 
             <div class="brand-title"><?= e($roleLabel) ?></div>
             <small>Management System</small>
         </div>
-        <button type="button" class="sidebar-collapse" id="sidebarCollapse" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
     </div>
 
     <nav class="sidebar-nav">

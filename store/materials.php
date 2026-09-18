@@ -714,7 +714,7 @@ require_once __DIR__ . '/../includes/sidebar.php';
                                             <?php endif; ?>
                                         </td>
                                         <td class="text-center">
-                                            <div class="btn-group">
+                                            <div class="d-flex justify-content-center gap-2">
                                                 <a href="?edit=<?= (int)$material['id'] ?>" class="btn btn-sm btn-outline-primary" title="Edit">
                                                     <i class="fa-solid fa-pen"></i>
                                                 </a>
