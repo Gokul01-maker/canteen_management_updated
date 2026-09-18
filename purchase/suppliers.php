@@ -347,13 +347,7 @@ require_once __DIR__ . '/../includes/header.php';
 
                 <div>
                     <h4 class="mb-1">
-                        <i class="fa-solid fa-truck-field me-2"></i>
-                        Supplier Management
-                    </h4>
-
-                    <p class="text-muted mb-0">
-                        Manage purchase suppliers.
-                    </p>
+                        
                 </div>
 
                 <button

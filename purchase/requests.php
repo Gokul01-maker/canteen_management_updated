@@ -248,13 +248,7 @@ $requests = $stmt->fetchAll();
 
             <div>
 
-                <h4 class="mb-1">
-                    Purchase Requests
-                </h4>
-
-                <p class="text-muted mb-0">
-                    Review and process purchase requests submitted by Store.
-                </p>
+                
 
             </div>
 

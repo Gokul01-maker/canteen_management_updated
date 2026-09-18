@@ -437,13 +437,8 @@ require_once __DIR__ . '/../includes/header.php';
 
                 <div>
                     <h4 class="mb-1">
-                        <i class="fa-solid fa-file-invoice me-2"></i>
-                        Purchase Orders
+                       
                     </h4>
-
-                    <p class="text-muted mb-0">
-                        Create and manage purchase orders.
-                    </p>
                 </div>
 
                 <button
