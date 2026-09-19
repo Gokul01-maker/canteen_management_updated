@@ -441,6 +441,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </h4>
                 </div>
 
+                <?php if (($_SESSION['role_name'] ?? '') !== 'Super Admin'): ?>
                 <button
                     type="button"
                     class="btn btn-primary"
@@ -450,6 +451,7 @@ require_once __DIR__ . '/../includes/header.php';
                     <i class="fa-solid fa-plus me-2"></i>
                     Create Purchase Order
                 </button>
+                <?php endif; ?>
 
             </div>
 

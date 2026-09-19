@@ -45,6 +45,7 @@ if ($isKitchen) {
         ['label'=>'Price Master','icon'=>'fa-tags','href'=>'../admin/price_master.php'],
         ['label'=>'Invoice Approvals','icon'=>'fa-file-invoice-dollar','href'=>'../admin/invoice_approvals.php'],
         ['label'=>'Canteen Report','icon'=>'fa-chart-pie','href'=>'../admin/canteen_report.php'],
+        ['label'=>'PO Approvals','icon'=>'fa-clipboard-check','href'=>'../purchase/purchase_orders.php'],
     ];
 }
 

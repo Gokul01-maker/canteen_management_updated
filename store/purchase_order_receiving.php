@@ -183,10 +183,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     }
 
                     /*
-                    | Skip zero quantity.
+                    | IF ZERO QTY (NOT RECEIVED) - UPDATE TO 0 TO AVOID BILLING
                     */
 
                     if ($receivedQty == 0) {
+                        $zeroStmt = $con->prepare("
+                            UPDATE purchase_order_items 
+                            SET ordered_qty = 0, total_amount = 0 
+                            WHERE id = ?
+                        ");
+                        $zeroStmt->execute([$itemId]);
                         continue;
                     }
 
@@ -276,6 +282,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $unitRate = (float)(
                         $rateStmt->fetchColumn() ?? 0
                     );
+
+                    /*
+                    |--------------------------------------------------------------------------
+                    | SHORT CLOSE (AUTO ADJUST QTY & TOTAL AMOUNT)
+                    |--------------------------------------------------------------------------
+                    */
+                    
+                    if ($receivedQty < $orderedQty) {
+                        $newTotalAmount = $receivedQty * $unitRate;
+                        
+                        $adjustStmt = $con->prepare("
+                            UPDATE purchase_order_items
+                            SET ordered_qty = ?, total_amount = ?
+                            WHERE id = ?
+                        ");
+                        $adjustStmt->execute([
+                            $receivedQty,
+                            $newTotalAmount,
+                            $itemId
+                        ]);
+                    }
 
                     /*
                     |--------------------------------------------------------------------------
